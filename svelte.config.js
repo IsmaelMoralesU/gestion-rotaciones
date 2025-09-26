@@ -5,14 +5,10 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html',
-      precompress: false
+      fallback: 'index.html'
     }),
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/gestion-rotaciones' : ''
-    },
-    prerender: {
-      entries: ['*']
     }
   }
 };
