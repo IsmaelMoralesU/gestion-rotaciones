@@ -1,0 +1,66 @@
+/* Estilos compartidos para el diseño de páginas */
+
+/* Contenedor principal */
+.container {
+    padding: 2rem;
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezados */
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  /* Contenedor de secciones */
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Acciones de página */
+  .actions {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Botón de regreso */
+  .back-button {
+    background-color: #7f8c8d;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #95a5a6;
+  }
+  
+  /* Diseño responsivo */
+  @media (min-width: 768px) {
+    .sections-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
