@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // Redirect any 404 to index.html for SPA routing
+    const path = window.location.pathname.replace('/gestion-rotaciones', '');
+    const query = window.location.search;
+    const hash = window.location.hash;
+    window.history.replaceState(null, null, '/gestion-rotaciones/' + '?redirect=' + encodeURIComponent(path + query + hash));
+    window.location.href = '/gestion-rotaciones/';
+  </script>
+</head>
+<body></body>
+</html>
