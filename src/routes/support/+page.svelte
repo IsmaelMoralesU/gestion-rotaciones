@@ -1,4 +1,12 @@
 <script>
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    // Si venimos de un hash, limpiar la URL
+    if (window.location.hash === '#support') {
+      window.history.replaceState(null, null, window.location.pathname);
+    }
+  });
   import { goto } from '$app/navigation';
   import TeamSwitcher, { activeTeam } from '../../lib/components/TeamSwitcher.svelte';
   import RolesManagement from '../../lib/components/RolesManagement.svelte';

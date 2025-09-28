@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   
   function goToSupport() {
-    goto('/support');
+     window.location.href = '/gestion-rotaciones/#support';;
   }
 
   onMount(() => {
