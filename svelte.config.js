@@ -1,16 +1,23 @@
 import adapter from '@sveltejs/adapter-static';
 
-export default {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
   kit: {
     adapter: adapter({
-      pages: 'dist',
-      assets: 'dist',
-      fallback: '404.html',
+      pages: 'build',
+      assets: 'build',
+      fallback: 'index.html', // Importante para SPAs
       precompress: false,
-      strict: false
+      strict: true
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/gestion-rotaciones' : ''
+      base: process.env.NODE_ENV === 'production' ? '/nombre-de-tu-repositorio' : ''
+    },
+    prerender: {
+      handleHttpError: 'warn',
+      handleMissingId: 'warn'
     }
   }
 };
+
+export default config;
