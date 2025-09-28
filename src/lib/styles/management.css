@@ -1,0 +1,115 @@
+/* Estilos compartidos para las secciones de gestión */
+
+/* Contenedor de sección */
+.section-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Títulos de sección */
+  .section-container h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Colores de borde específicos para cada sección */
+  .roles-section h2 {
+    border-bottom: 2px solid #3498db; /* Azul */
+  }
+  
+  .collaborators-section h2 {
+    border-bottom: 2px solid #e74c3c; /* Rojo */
+  }
+  
+  .rotation-section h2 {
+    border-bottom: 2px solid #2ecc71; /* Verde */
+  }
+  
+  /* Contenido de sección */
+  .content {
+    padding: 0.5rem 0;
+  }
+  
+  /* Listas de características */
+  .features-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  .features-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Botones de acción */
+  .action-button {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    color: white;
+  }
+  
+  /* Colores específicos para los botones de cada sección */
+  .roles-button {
+    background-color: #3498db;
+  }
+  
+  .roles-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .collaborators-button {
+    background-color: #e74c3c;
+  }
+  
+  .collaborators-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .rotation-button {
+    background-color: #2ecc71;
+  }
+  
+  .rotation-button:hover {
+    background-color: #27ae60;
+  }
+
+    /* Estilos para listas y tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    th {
+        font-weight: 600;
+        color: #3e4555;
+    }
+    
+    .icon-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    
+    .icon-button.edit:hover {
+        color: #3498db;
+    }
+    
+    .icon-button.delete:hover {
+        color: #e74c3c;
+    }
