@@ -7,6 +7,9 @@
   import { db } from '../../lib/services/DatabaseService.js';
   import '../../lib/styles/layout.css';
   import { onMount, onDestroy } from 'svelte';
+  export const prerender = true;
+  export const ssr = false;
+  export const trailingSlash = 'always';
   
   let currentTeamId = 0;
   let isLoading = false;
